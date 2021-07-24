@@ -6,8 +6,24 @@ public class Student {
     int grade;
     String address;
 
-    public void showStudentInfo(){
-        System.out.println(studentName + "," + address); //이름 주소 출력
+    // getter
+    public void getStudentInfo(){
+        System.out.printf("이름은 %S", studentName); //이름
     }
-    
+
+    //setter
+    public String setStudentName(String name){
+        studentName = name;
+        return studentName;
+    }
+
+    public static void main(String[] args) {
+        Student studentAhn = new Student();
+        studentAhn.studentName = studentAhn.setStudentName("정석진");
+
+        System.out.println(studentAhn.studentName);
+        studentAhn.getStudentInfo();
+
+
+    }
 }
