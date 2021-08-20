@@ -10,5 +10,10 @@
         <module name="doFirst.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="doFirst" target="1.8" />
+      <module name="doFirst.main" target="1.8" />
+      <module name="doFirst.test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

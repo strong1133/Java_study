@@ -28,7 +28,6 @@ public class ObjectArrayCopy2 {
         for(int i =0; i<bookArray2.length; i++){
             bookArray2[i].showBookInfo();
         }
-
         // 변경 작업
         bookArray1[1].setBookName("돌이킬 수 없는 약속");
         bookArray1[2].setAuthor("홍슬기");
