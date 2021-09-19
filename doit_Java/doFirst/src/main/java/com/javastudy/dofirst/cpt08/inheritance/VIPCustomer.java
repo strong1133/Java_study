@@ -20,6 +20,13 @@ public class VIPCustomer extends Customer {
         return agentID;
     }
 
+
+    @Override
+    public int calcPrice(int price){
+        bonusPoint += price * bonusRatio;
+        return price - (int)(price * saleRatio); // VIP인 경우 할인된 가격을 계산하여 반환
+    }
+
     // 오버라이딩
     public String showCustomerInfo(){
         return customerName + "님의 등급은 " + customerGrade +"이며, 보너스 포인트는 "+ bonusPoint + " 입니다. 댬당 상담원의 아이디는 "+ agentID + "입니다";

@@ -21,7 +21,6 @@ public class Customer {
 
     // Custom 생성자 - customerID, customerName를 매개변수로 넘겨야 함.
     public Customer(int customerID, String customerName ){
-
         this.customerID = customerID;
         this.customerName = customerName;
         customerGrade = "SILVER";
@@ -29,6 +28,7 @@ public class Customer {
         System.out.println("Customer 생성자 호출22");
     }
 
+    // 상위 클래스의 calcPrice
     public int calcPrice(int price){
         bonusPoint += price * bonusRatio;
         return price;
