@@ -1,4 +1,5 @@
 package com.javastudy.dofirst.cpt08.polymorphism;
+//오버라이딩 테스트
 
 class Animal {
     public void move(){
