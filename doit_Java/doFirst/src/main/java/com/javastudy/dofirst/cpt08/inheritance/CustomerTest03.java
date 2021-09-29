@@ -30,6 +30,7 @@ public class CustomerTest03 {
         System.out.println(" ===== 할인율과 보너스 계산 ===== ");
         int price = 12000;
 
+        // 배열에 들어 있는 인스턴스에 맞는 클래스 형으로 오버라이딩 되어 매서드 실행
         for(Customer customer : customerArrayList){
             int cost = customer.calcPrice(price);
             System.out.println(customer.getCustomerName() + " 님이 " + cost + "원 지불하셨습니다.");
