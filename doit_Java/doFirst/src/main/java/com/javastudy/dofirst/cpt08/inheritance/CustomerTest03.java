@@ -2,7 +2,7 @@ package com.javastudy.dofirst.cpt08.inheritance;
 
 import java.util.ArrayList;
 
-// 배열을 통한 클래스 관리  
+// 배열을 통한 클래스 관리
 public class CustomerTest03 {
 
     public static void main(String[] args) {
