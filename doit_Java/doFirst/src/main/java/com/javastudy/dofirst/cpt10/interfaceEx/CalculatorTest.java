@@ -12,6 +12,7 @@ public class CalculatorTest {
         System.out.println(completeCalc.times(11,23));
         System.out.println(completeCalc.divide(4,2));
         completeCalc.ShowInfo();
+        completeCalc.description();
 
         Calc calc = new CompleteCalc();
 
@@ -19,6 +20,12 @@ public class CalculatorTest {
         System.out.println( calc.sub(1,2));
         System.out.println(calc.times(2,3));
         System.out.println(calc.divide(3,0));
+
+        // 정적 매서드 사용
+        int [] arr = {1,2,3,4,5};
+        System.out.println(Calc.total(arr));
+
+
 
 
     }
